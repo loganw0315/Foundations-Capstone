@@ -8,11 +8,9 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 const correctSound = new Audio('correct.wav')
 const wrongSound = new Audio('wrong.mp3')
 const resultsList = document.getElementById('question-results-list')
-// const resultsHeader = document.getElementById('results-header')
 const selectQuizButton = document.getElementById('dropbtn')
 const menuButton = document.getElementById('menu-btn')
-
-let shuffledQuestions, currentQuestionIndex, questions
+let shuffledQuestions, currentQuestionIndex, questions, totalQuestions
 
 document.getElementById('quiz-1').addEventListener("click", () => {
   selectQuizButton.textContent="Quiz 1"
@@ -20,6 +18,28 @@ document.getElementById('quiz-1').addEventListener("click", () => {
     .then(res =>{
       console.log(res.data);
     })
+    document.getElementById("dropdown-content").classList.add('hide')
+})
+document.getElementById('quiz-2').addEventListener("click", () => {
+  selectQuizButton.textContent="Quiz 2"
+  // axios.put(`/api/quiz/quiz1`)
+  //   .then(res =>{
+  //     console.log(res.data);
+  //   })
+  document.getElementById("dropdown-content").classList.add('hide')
+
+})
+document.getElementById('quiz-3').addEventListener("click", () => {
+  selectQuizButton.textContent="Quiz 3"
+  // axios.put(`/api/quiz/quiz1`)
+  //   .then(res =>{
+  //     console.log(res.data);
+  //   })
+  document.getElementById("dropdown-content").classList.add('hide')
+
+})
+document.getElementById('dropbtn').addEventListener('click', () =>{
+  document.getElementById("dropdown-content").classList.remove('hide')
 })
 
 
@@ -31,7 +51,10 @@ nextButton.addEventListener('click', () => {
 })
 resultsButton.addEventListener('click', showResults)
 
+
+
 function startQuiz() {
+  totalQuestions = 0;
   if(selectQuizButton.textContent !== "Select Quiz"){
   startButton.classList.add('hide')
   selectQuizButton.classList.add('hide')
@@ -51,16 +74,15 @@ function startQuiz() {
 }
 
 function goToMainMenu() {
-  // const resultsTotalElement = document.querySelectorAll('p')
-  // if(resultsTotalElement){
-  //   resultsTotalElement.forEach(elem => resultsHeader.removeChild(resultsTotalElement)
-  // }
-  resultsHeader.innerHTML=""
+  const resultsHeader = document.getElementById('results-header')
+  if(resultsHeader){
+    resultsHeader.innerHTML=""
+  }
+  
   resetPage()
   menuButton.classList.add('hide')
   selectQuizButton.classList.remove('hide')
   startButton.classList.remove('hide')
-  resultsHeader.classList.add('hide')
   resultsButton.classList.add('hide')
   questionContainerElement.classList.add('hide')
   
@@ -94,6 +116,11 @@ function showQuestion(question) {
 }
 
 function resetPage() {
+  const resultsHeader = document.getElementById('results-header')
+  if(resultsHeader){
+    resultsHeader.innerHTML=""
+  }
+  
   clearStatusClass(document.body)
   nextButton.classList.add('hide')
   questionElement.classList.remove('hide')
@@ -105,7 +132,6 @@ function resetPage() {
   })
 
   resultsList.classList.add('hide')
-  // resultsHeader.classList.add('hide')
 }
 
 function selectAnswer(e) {
@@ -178,12 +204,12 @@ function showResults(){
 
     let correctCount = res.data[1]
     let wrongCount = res.data[2]
-    let totalQuestions = (+correctCount)+(+wrongCount)
+    totalQuestions = (+correctCount)+(+wrongCount)
     let resultsTotal = document.createElement('p')
     resultsTotal.textContent = `${correctCount}/${totalQuestions}`
     resultsHeader.appendChild(resultsTotal)
     axios.delete(`/api/stats/`)
-    totalQuestions = 0;
+    
     })
 
 
