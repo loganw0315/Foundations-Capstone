@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Capstone Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="dropdown" id='dropdown-container'>
+        <button class="dropbtn btn" id='dropbtn'>Select Quiz</button>
+        <div class="dropdown-content">
+          <a id='quiz-1'>Quiz 1</a>
+          <a id='quiz-2'>Link 2</a>
+          <a id='quiz-3'>Link 3</a>
+        </div>
+      </div> 
+      <div id="question-container" class="hide">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+        </div>
+        <div id="question-results-list" class="results-list hide">
+        </div>
+      </div>
+      <div class="controls">
+        <button id="start-btn" class="start-btn btn">Begin Quiz</button>
+        <button id="menu-btn" class="menu-btn btn hide">Main Menu</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+        <button id="results-btn" class="results-btn btn hide">Results</button>
+
+      </div>
+    </div>
+    <audio id="audio-wrong" src="https://www.soundjay.com/buttons/sounds/beep-03.mp3" autoplay="false" ></audio>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>

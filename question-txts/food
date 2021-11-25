@@ -1,0 +1,100 @@
+{
+    "question": "Which of these pastas is spiral shaped?",
+    "A": "fettuccine",
+    "B": "rigatoni",
+    "C": "tortellini",
+    "D": "rotini",
+    "answer": "D"
+  },{
+    "question": "Which of these is typically not used as a spice?",
+    "A": "dill",
+    "B": "thyme",
+    "C": "hemlock",
+    "D": "marjoram",
+    "answer": "C"
+  },{
+    "question": "Which of these is not found in a Snickers candy bar?",
+    "A": "almonds",
+    "B": "chocolate",
+    "C": "nougat",
+    "D": "caramel",
+    "answer": "A"
+  },{
+    "question": "Which of these is not an ingredient in Yorkshire pudding?",
+    "A": "eggs",
+    "B": "milk",
+    "C": "chocolate",
+    "D": "meat drippings",
+    "answer": "C"
+  },{
+    "question": "Which of these is not a type of chili pepper?",
+    "A": "habanero",
+    "B": "cheyenne",
+    "C": "jalapeno",
+    "D": "guajillo",
+    "answer": "B"
+  },{
+    "question": "Which of these is not a traditional Greek dish?",
+    "A": "sukiyaki",
+    "B": "souvlaki",
+    "C": "moussaka",
+    "D": "finikia",
+    "answer": "A"
+  },{
+    "question": "Which of these is not a spice?",
+    "A": "dill",
+    "B": "aniseed",
+    "C": "cucumber",
+    "D": "cayenne",
+    "answer": "C"
+  },{
+    "question": "Which of these is made from cacao seeds?",
+    "A": "marzipan",
+    "B": "soy sauce",
+    "C": "chocolate",
+    "D": "anchovies",
+    "answer": "C"
+  },{
+    "question": "Which of these is a member of the cucumber family?",
+    "A": "green pepper",
+    "B": "watermelon",
+    "C": "potato",
+    "D": "green bean",
+    "answer": "B"
+  },{
+    "question": "Which of these foods is not traditionally considered kosher?",
+    "A": "citrus fruits",
+    "B": "barley",
+    "C": "chicken",
+    "D": "shellfish",
+    "answer": "D"
+  },
+  {
+    "question": "Which of these foods is poisonous to dogs?",
+    "A": "peanut butter",
+    "B": "bananas",
+    "C": "chocolate",
+    "D": "olives",
+    "answer": "C"
+  },{
+    "question": "Which of these foods could you catch at sea?",
+    "A": "shallot",
+    "B": "stollen",
+    "C": "scallop",
+    "D": "scone",
+    "answer": "C"
+  },{
+    "question": "Which of these foods could contain small amounts of naturally occurring opium?",
+    "A": "chocolate truffles",
+    "B": "poppy seed bagels",
+    "C": "carbonated soda",
+    "D": "sesame chicken",
+    "answer": "B"
+  },{
+    "question": "Which of these dishes is made from pig intestines?",
+    "A": "haggis",
+    "B": "chitlins",
+    "C": "grits",
+    "D": "chop suey",
+    "answer": "B"
+  },
