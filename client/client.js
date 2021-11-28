@@ -13,7 +13,7 @@ const menuButton = document.getElementById('menu-btn')
 let shuffledQuestions, currentQuestionIndex, questions, totalQuestions
 
 document.getElementById('quiz-1').addEventListener("click", () => {
-  selectQuizButton.textContent="Quiz 1"
+  selectQuizButton.textContent="Food"
   axios.put(`/api/quiz/quiz1`)
     .then(res =>{
       console.log(res.data);
@@ -21,7 +21,7 @@ document.getElementById('quiz-1').addEventListener("click", () => {
     document.getElementById("dropdown-content").classList.add('hide')
 })
 document.getElementById('quiz-2').addEventListener("click", () => {
-  selectQuizButton.textContent="Quiz 2"
+  selectQuizButton.textContent="Science & Nature"
   axios.put(`/api/quiz/quiz2`)
     .then(res =>{
       console.log(res.data);
@@ -30,7 +30,7 @@ document.getElementById('quiz-2').addEventListener("click", () => {
 
 })
 document.getElementById('quiz-3').addEventListener("click", () => {
-  selectQuizButton.textContent="Quiz 3"
+  selectQuizButton.textContent="Video Games"
   axios.put(`/api/quiz/quiz3`)
     .then(res =>{
       console.log(res.data);
