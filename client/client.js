@@ -75,6 +75,7 @@ function startQuiz() {
   }else{
     alert("Please select a quiz");
   }
+  axios.delete(`/api/stats/`)
 }
 //Resets page to the quiz app default, triggered by pressing Main Menu button
 function goToMainMenu() {
@@ -97,6 +98,7 @@ function goToMainMenu() {
   Array.from(answerButtonsElement.children).forEach(button => {
     button.classList.add('hide')
   })
+  axios.delete(`/api/stats/`)
 }
 //Resets page and triggers the function to show next question, triggered by pressing the Next and Begin Quiz buttons
 function setNextQuestion() {
