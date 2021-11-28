@@ -181,7 +181,7 @@ function showResults(){
     resultsHeader.id = 'results-header'
     resultsHeader.textContent = 'Results'
     resultsPage.id = 'main-page'
-    clearStatusClass(document.body)
+    clearStatusClass(document.body )
     questionContainerElement.prepend(resultsHeader)
     Array.from(answerButtonsElement.children).forEach(button => {
         button.classList.add('hide')
