@@ -12,9 +12,9 @@ app.get('/', (req,res)=>{
     res.sendFile(path.join(__dirname, '../index.html'))
 })
 
-const quiz1 = require("./quiz-1.json")
-// const quiz2 = require("./quiz-2.json")
-// const quiz3 = require("./quiz-3.json")
+const quiz1 = require("./food.json")
+const quiz2 = require("./science-nature.json")
+const quiz3 = require("./video-games.json")
 
 let currentquiz
 
@@ -59,10 +59,10 @@ app.put(`/api/quiz/:quiz`, (req,res) => {
   
   if(req.params.quiz == "quiz1"){
     currentquiz = quiz1
-  // }else if(req.params == "quiz2"){
-  //   currentquiz = quiz2
-  // }else if(req.params == "quiz3"){
-  //   currentquiz = quiz3
+  }else if(req.params.quiz == "quiz2"){
+    currentquiz = quiz2
+  }else if(req.params.quiz == "quiz3"){
+    currentquiz = quiz3
   }
   res.status(200).send(currentquiz)
 })

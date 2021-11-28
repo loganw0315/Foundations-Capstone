@@ -22,22 +22,23 @@ document.getElementById('quiz-1').addEventListener("click", () => {
 })
 document.getElementById('quiz-2').addEventListener("click", () => {
   selectQuizButton.textContent="Quiz 2"
-  // axios.put(`/api/quiz/quiz1`)
-  //   .then(res =>{
-  //     console.log(res.data);
-  //   })
+  axios.put(`/api/quiz/quiz2`)
+    .then(res =>{
+      console.log(res.data);
+    })
   document.getElementById("dropdown-content").classList.add('hide')
 
 })
 document.getElementById('quiz-3').addEventListener("click", () => {
   selectQuizButton.textContent="Quiz 3"
-  // axios.put(`/api/quiz/quiz1`)
-  //   .then(res =>{
-  //     console.log(res.data);
-  //   })
+  axios.put(`/api/quiz/quiz3`)
+    .then(res =>{
+      console.log(res.data);
+    })
   document.getElementById("dropdown-content").classList.add('hide')
 
 })
+
 document.getElementById('dropbtn').addEventListener('click', () =>{
   document.getElementById("dropdown-content").classList.remove('hide')
 })

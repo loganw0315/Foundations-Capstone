@@ -1,0 +1,130 @@
+[
+    
+{
+  "question": "Which of these pastas is spiral shaped?",
+  "answers": [
+    { "text": "fettuccine", "correct": false },
+    { "text": "rigatoni", "correct": false },
+    { "text": "tortellini", "correct": false },
+    { "text": "rotini", "correct": true }
+  ]
+},
+{
+  "question": "Which of these is typically not used as a spice?",
+  "answers": [
+    { "text": "dill", "correct": false },
+    { "text": "thyme", "correct": false },
+    { "text": "hemlock", "correct": true },
+    { "text": "marjoram", "correct": false }
+  ]
+},
+{
+  "question": "Which of these is not found in a Snickers candy bar?",
+  "answers": [
+    { "text": "almonds", "correct": true },
+    { "text": "chocolate", "correct": false },
+    { "text": "nougat", "correct": false },
+    { "text": "caramel", "correct": false }
+  ]
+},
+{
+  "question": "Which of these is not an ingredient in Yorkshire pudding?",
+  "answers": [
+    { "text": "eggs", "correct": false },
+    { "text": "milk", "correct": false },
+    { "text": "chocolate", "correct": true },
+    { "text": "meat drippings", "correct": false }
+  ]
+},
+{
+  "question": "Which of these is not a type of chili pepper?",
+  "answers": [
+    { "text": "habanero", "correct": false },
+    { "text": "cheyenne", "correct": true },
+    { "text": "jalapeno", "correct": false },
+    { "text": "guajillo", "correct": false }
+  ]
+},
+{
+  "question": "Which of these is not a traditional Greek dish?",
+  "answers": [
+    { "text": "sukiyaki", "correct": true },
+    { "text": "souvlaki", "correct": false },
+    { "text": "moussaka", "correct": false },
+    { "text": "finikia", "correct": false }
+  ]
+},
+{
+  "question": "Which of these is not a spice?",
+  "answers": [
+    { "text": "dill", "correct": false },
+    { "text": "aniseed", "correct": false },
+    { "text": "cucumber", "correct": true },
+    { "text": "cayenne", "correct": false }
+  ]
+},
+{
+  "question": "Which of these is made from cacao seeds?",
+  "answers": [
+    { "text": "marzipan", "correct": false },
+    { "text": "soy sauce", "correct": false },
+    { "text": "chocolate", "correct": true },
+    { "text": "anchovies", "correct": false }
+  ]
+},
+{
+  "question": "Which of these is a member of the cucumber family?",
+  "answers": [
+    { "text": "green pepper", "correct": false },
+    { "text": "watermelon", "correct": true },
+    { "text": "potato", "correct": false },
+    { "text": "green bean", "correct": false }
+  ]
+},
+{
+  "question": "Which of these foods is not traditionally considered kosher?",
+  "answers": [
+    { "text": "citrus fruits", "correct": false },
+    { "text": "barley", "correct": false },
+    { "text": "chicken", "correct": false },
+    { "text": "shellfish", "correct": true }
+  ]
+},
+{
+  "question": "Which of these foods is poisonous to dogs?",
+  "answers": [
+    { "text": "peanut butter", "correct": false },
+    { "text": "bananas", "correct": false },
+    { "text": "chocolate", "correct": true },
+    { "text": "olives", "correct": false }
+  ]
+},
+{
+  "question": "Which of these foods could you catch at sea?",
+  "answers": [
+    { "text": "shallot", "correct": false },
+    { "text": "stollen", "correct": false },
+    { "text": "scallop", "correct": true },
+    { "text": "scone", "correct": false }
+  ]
+},
+{
+  "question": "Which of these foods could contain small amounts of naturally occurring opium?",
+  "answers": [
+    { "text": "chocolate truffles", "correct": false },
+    { "text": "poppy seed bagels", "correct": true },
+    { "text": "carbonated soda", "correct": false },
+    { "text": "sesame chicken", "correct": false }
+  ]
+},
+{
+  "question": "Which of these dishes is made from pig intestines?",
+  "answers": [
+    { "text": "haggis", "correct": false },
+    { "text": "chitlins", "correct": true },
+    { "text": "grits", "correct": false },
+    { "text": "chop suey", "correct": false }
+  ]
+}
+      
+]
