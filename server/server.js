@@ -9,7 +9,7 @@ app.use(express.static('client'))
 app.use(express.static(path.join(__dirname, 'client/client.js')))
 
 app.get('/', (req,res)=>{
-    res.sendFile(path.join(__dirname, '../index.html'))
+  res.sendFile(path.join(__dirname, '../client/main.html'))
 })
 
 const quiz1 = require("./food.json")
