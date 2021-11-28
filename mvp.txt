@@ -1,0 +1,6 @@
+1. User can enter the quiz page from the main page
+2. User can select a quiz from the dropdown menu on the quiz page
+3. User can select an answer to each quiz question, page then shows animation and changes element colors depending on answer selected
+4. User can enter the results screen at the end of the quiz to display a summary of their quiz results
+5. User can restart the quiz from the beginning
+6. User can restart app to the main page 

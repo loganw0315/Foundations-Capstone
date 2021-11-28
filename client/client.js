@@ -10,8 +10,11 @@ const wrongSound = new Audio('wrong.mp3')
 const resultsList = document.getElementById('question-results-list')
 const selectQuizButton = document.getElementById('dropbtn')
 const menuButton = document.getElementById('menu-btn')
+const resultsPage = document.querySelector('body')
 let shuffledQuestions, currentQuestionIndex, questions, totalQuestions
 
+
+//adding listeners to dropdown buttons, changes current quiz on server side
 document.getElementById('quiz-1').addEventListener("click", () => {
   selectQuizButton.textContent="Food"
   axios.put(`/api/quiz/quiz1`)
@@ -43,7 +46,7 @@ document.getElementById('dropbtn').addEventListener('click', () =>{
   document.getElementById("dropdown-content").classList.remove('hide')
 })
 
-
+//adding listeners to controller buttons
 menuButton.addEventListener('click', goToMainMenu)
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
@@ -53,7 +56,7 @@ nextButton.addEventListener('click', () => {
 resultsButton.addEventListener('click', showResults)
 
 
-
+//Starts/restarts quiz, triggered by pressing the Begin Quiz button 
 function startQuiz() {
   totalQuestions = 0;
   if(selectQuizButton.textContent !== "Select Quiz"){
@@ -73,7 +76,7 @@ function startQuiz() {
     alert("Please select a quiz");
   }
 }
-
+//Resets page to the quiz app default, triggered by pressing Main Menu button
 function goToMainMenu() {
   const resultsHeader = document.getElementById('results-header')
   if(resultsHeader){
@@ -95,12 +98,12 @@ function goToMainMenu() {
     button.classList.add('hide')
   })
 }
-
+//Resets page and triggers the function to show next question, triggered by pressing the Next and Begin Quiz buttons
 function setNextQuestion() {
   resetPage()
   showQuestion(shuffledQuestions[currentQuestionIndex])
 }
-
+//Displays the next question, trigged by the setNextQuestion function
 function showQuestion(question) {
   questionContainerElement.classList.remove('hide')
   questionElement.innerText = question.question
@@ -115,7 +118,7 @@ function showQuestion(question) {
     answerButtonsElement.appendChild(button)
   })
 }
-
+//Clear elements to prepare page for new elements to be created, trigged by the setNextQuestion function
 function resetPage() {
   const resultsHeader = document.getElementById('results-header')
   if(resultsHeader){
@@ -134,7 +137,7 @@ function resetPage() {
 
   resultsList.classList.add('hide')
 }
-
+//Sends stats about answer to current question to server, triggers animations and sounds, shows next button between questions, and results button at the end of the quiz
 function selectAnswer(e) {
   const selectedButton = e.target
   const correct = selectedButton.dataset.correct
@@ -167,16 +170,18 @@ function selectAnswer(e) {
     resultsButton.classList.remove('hide')
   }
 }
+//Fills the results page with stats, triggered by clicking Results button
 function showResults(){
     questionElement.classList.add('hide')
     resultsList.classList.remove('hide')
-    // resultsHeader.classList.remove('hide')
     resultsButton.classList.add('hide')
     startButton.innerText = 'Restart'
     startButton.classList.remove('hide')
     let resultsHeader = document.createElement('div')
     resultsHeader.id = 'results-header'
     resultsHeader.textContent = 'Results'
+    resultsPage.id = 'main-page'
+    clearStatusClass(document.body)
     questionContainerElement.prepend(resultsHeader)
     Array.from(answerButtonsElement.children).forEach(button => {
         button.classList.add('hide')
@@ -216,7 +221,7 @@ function showResults(){
 
     
 }
-
+//Sets background and button color to match answer correctness
 function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
@@ -225,7 +230,7 @@ function setStatusClass(element, correct) {
     element.classList.add('wrong')
   }
 }
-
+//Resets element classes
 function clearStatusClass(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
