@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-* [Summary] (#summary)
-* [Tech Stack] (#tech-stack)
-* [Features] (#features)
+* [Summary](#summary)
+* [Tech Stack](#tech-stack)
+* [Features](#features)
 
 ## <a name="summary"></a>Summary
 
@@ -18,16 +18,16 @@ Javascript, HTML5, CSS, Axios, Express
 
 Select a quiz from the dropdown menu
 
-![Selection Dropdown GIF](/images/dropdown-gif.gif)
+![Selection Dropdown GIF](/client/images/dropdown-gif.gif)
 
 Select an answer and get feedback on if the answer was correct 
 
-![Answer Selection GIF](/images/answer-gif.gif)
+![Answer Selection GIF](/client/images/answer-gif.gif)
 
 Get a summary of results at the end of the quiz 
 
-![Results Display GIF](/images/results-gif.gif)
+![Results Display GIF](/client/images/results-gif.gif)
 
 Restart the quiz at any time or navigate back to the main menu
 
-![Restart/Main Menu GIF](/images/restart-gif.gif)
+![Restart/Main Menu GIF](/client/images/restart-gif.gif)
