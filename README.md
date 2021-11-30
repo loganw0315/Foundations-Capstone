@@ -4,7 +4,7 @@
 
 Quizzle is an application that lets the user complete a variety of trivia quizzes and provides them with colorful and fun feedback. 
 
-Walkthrough:<a href="https://www.youtube.com/watch?v=WU350CSYHxg&t=29s"></a>
+<a href="https://www.youtube.com/watch?v=WU350CSYHxg&t=29s">Demo</a>
 
 ## <a name="tech-stack"></a>Tech Stack
 
