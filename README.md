@@ -1,11 +1,5 @@
 # Quizzle
 
-## Table of Contents
-
-* [Summary](#summary)
-* [Tech Stack](#tech-stack)
-* [Features](#features)
-
 ## <a name="summary"></a>Summary
 
 Quizzle is an application that lets the user complete a variety of trivia quizzes and provides them with colorful and fun feedback. 
