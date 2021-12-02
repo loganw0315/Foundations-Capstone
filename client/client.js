@@ -10,7 +10,7 @@ const wrongSound = new Audio('wrong.mp3')
 const resultsList = document.getElementById('question-results-list')
 const selectQuizButton = document.getElementById('dropbtn')
 const menuButton = document.getElementById('menu-btn')
-const resultsPage = document.querySelector('body')
+const body = document.querySelector('body')
 let shuffledQuestions, currentQuestionIndex, questions, totalQuestions
 
 
@@ -63,6 +63,7 @@ function startQuiz() {
   startButton.classList.add('hide')
   selectQuizButton.classList.add('hide')
   menuButton.classList.remove('hide')
+  body.id = ''
   axios.get(`/api/quiz`)
     .then(res =>{
       questions = res.data
@@ -95,6 +96,7 @@ function goToMainMenu() {
   startButton.textContent = "Begin Quiz"
   currentQuestionIndex = 0
   resultsList.innerHTML="" 
+  body.id = ''
   Array.from(answerButtonsElement.children).forEach(button => {
     button.classList.add('hide')
   })
@@ -182,7 +184,7 @@ function showResults(){
     let resultsHeader = document.createElement('div')
     resultsHeader.id = 'results-header'
     resultsHeader.textContent = 'Results'
-    resultsPage.id = 'main-page'
+    body.id = 'main-page'
     clearStatusClass(document.body )
     questionContainerElement.prepend(resultsHeader)
     Array.from(answerButtonsElement.children).forEach(button => {
